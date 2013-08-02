@@ -1,0 +1,35 @@
+/*========================================================================================================================================
+TRABALHO PRATICO 1 - SOFTWARE BASICO
+@FELIPE MORAES GOMES
+
+*FUNC.H - Definicao de variaveis globais e cabecalhos de funcoes basicas do trabalho
+========================================================================================================================================*/
+
+#include <stdio.h>
+
+#ifndef FUNC_H
+#define FUNC_H
+
+
+//Variaveis globais
+int memory[1000];
+int reg[8];
+int PC;
+int SP;
+char PSW[2];
+
+/*
+ *Carrega dados do arquivo de entrada
+ Argumentos:
+ * file_name - Nome do arquivo binario de entrada padrao do trabalho
+*/
+int Load(char *file_name);
+
+/*
+ *Executa instrucao do formato code
+ Argumentos:
+ * code - Instrucao a ser executada
+*/
+int Execute(int code);
+
+#endif

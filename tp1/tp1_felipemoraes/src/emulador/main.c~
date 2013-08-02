@@ -1,0 +1,30 @@
+/*========================================================================================================================================
+TRABALHO PRATICO 1 - SOFTWARE BASICO
+@FELIPE MORAES GOMES
+
+*MAIN.C - Algoritmo principal do trabalho pratico
+========================================================================================================================================*/
+
+#include <stdlib.h>
+#include <stdio.h>
+#include "func.h"
+
+
+int main(int argc, char * argv[])
+{
+    int halt = 0;
+    int code;
+    char mode;
+    load_input(argv[1]);
+    mode = argv[2][0];
+    while(halt == 0){
+        code = memory[PC];
+	if (mode == 'v'){
+		printf("PC = %d, SP = %d, PSW = %c %c, instruction %d\n",PC,SP,PSW[0],PSW[1],code);
+	}
+        PC = PC + 1;
+        halt = execute(code);
+    }
+    return EXIT_SUCCESS;
+}
+

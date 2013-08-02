@@ -1,0 +1,52 @@
+--------------------------------------------------------------------------------
+ Universidade Federal de Minas Gerais
+ Instituto de Ciências Exatas
+ Departamento de Ciência da Computação
+ Software Básico DCC008 - 2013/01
+--------------------------------------------------------------------------------
+
+ <><><> Trabalho Prático 4 <><><>
+
+    Instruções de submissão:
+
+        1. Renomeie o diretório "tp4_seulogin/" com o seu respectivo login 
+           do DCC.
+
+        2. Remova os arquivos de exemplo dos diretório "src/emulador/", 
+           "src/montador", "src/expansor" e "src/ligador" e coloque os arquivos 
+           dos seus projetos no lugar.
+
+        3. Modifique o arquivo "Makefile" na parte indicada para adicionar os 
+           arquivos do seu projeto.                                                   
+           
+        4. Verifique se, estando no diretório do arquivo Makefile, ao digitar 
+           o comando "make", seu projeto é compilado corretamente e os quatro
+           arquivos binários são gerados no diretório "bin/".
+        
+        5. Verifique se os binários gerados no diretório "bin/" são executados
+           corretamente.
+
+        6. Substitua o arquivo "doc/documentacao.pdf" pelo seu arquivo de
+           documentação deste trabalho prático.
+
+        7. Substitua os arquivos do diretório "tst/" pelos seus arquivos
+           de teste e, principalmente, os arquivos da tarefa de programação
+           assembly da MK.
+
+        8. O diretório "build/" não precisa ser alterado, ele só armazena
+           os arquivos objeto compilados do projeto.
+
+        9. Para gerar o arquivo de submissão, primeiro limpe os binários e
+           arquivos objeto com o comando "make clean". Em seguida, estando 
+           fora do diretório "tp4_seulogin", execute o comando:
+                
+                tar -cvzf tp4_seulogin.tar.gz tp4_seulogin/
+
+        10. Submeta o arquivo "tp4_seulogin.tar.gz" na tarefa do Moodle.
+
+ 
+ * Dúvidas gerais: Fórum do Moodle.
+
+ * Dúvidas individuais: E-mail para magno@dcc.ufmg.br com a tag "[SB]".
+
+--------------------------------------------------------------------------------

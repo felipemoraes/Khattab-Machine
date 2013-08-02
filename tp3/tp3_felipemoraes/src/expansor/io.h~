@@ -1,0 +1,18 @@
+/*========================================================================================================================================
+TRABALHO PRATICO 3 - SOFTWARE BASICO
+@FELIPE MORAES GOMES
+
+*IO.H - Define cabeçalho das funcoes basicas de Entrada e Saida
+========================================================================================================================================*/
+#ifndef IO_H
+#define IO_H
+
+char* readline(FILE *file);
+
+char* next_word(char *line);
+
+char** split_line(char *line);
+
+
+
+#endif

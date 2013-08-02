@@ -1,0 +1,19 @@
+	LOAD R0 M0		 ; R0 = 0 (f_0 = 0)
+	LOAD R1 M1       ; R1 = 1
+	COPY R3 R1       ; R3 = 1 (decrement)
+	COPY R4 R0	 ; R4 (register zero)
+	READ R2          ; Load N into RC (counter)
+	SUB R2 R1 
+L1:	SUB R2 R4       ; If N = 0, stop
+	JZ L2
+		XOR R0 R1    ; Xor swapps R0 and R1
+		XOR R1 R0    ; R1 becomes previous fibonacci
+		XOR R0 R1
+		ADD R0 R1    ; R0 += R1 (new fibonacci)
+		SUB R2 R3    ; R2--
+		JMP L1
+L2:	WRITE R0
+	HALT
+M0: WORD 0
+M1: WORD 1
+END
